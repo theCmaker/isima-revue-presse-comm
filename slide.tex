@@ -1,0 +1,47 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{float}
+\usepackage{pbox} %encadrement de texte
+\usepackage{graphicx} %images
+\usepackage[french]{babel}
+\usepackage{tikz}
+\usepackage{amsmath}
+\usepackage{wrapfig} %figures laterales
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{{\color{Green}\ding{51} }}%
+\newcommand{\xmark}{{\color{Red}\ding{55} }}%
+\usepackage{lipsum} %génération de lipsum
+
+\graphicspath{{./slide_img/}}%
+
+\usetheme{Madrid}
+\setbeamertemplate{navigation symbols}{}
+
+
+\title[]{Tremblement de terre au Népal}
+\author[Benjamin B., Pierre-Loup P.]{Benjamin Barbesange, Pierre-Loup Pissavy}
+\institute{ISIMA -- ZZ1 -- Communication}
+\date{5 mai 2015}
+
+
+\AtBeginSection[]{%
+	\begin{frame}
+		\frametitle{Sommaire}
+		\tableofcontents[currentsection, hideothersubsections]
+	\end{frame}
+}
+\begin{document}
+	\begin{frame}[plain] %title
+		\titlepage
+	\end{frame}
+	\begin{frame} %summary
+		\frametitle{Sommaire}
+		\tableofcontents[]
+	\end{frame}
+  \input{partie1}
+  \input{partie2}
+  \input{partie3}
+  \input{partie4}
+
+\end{document}
